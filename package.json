@@ -1,13 +1,12 @@
 {
-  "name": "service-worker-tutorial",
+  "name": "service-worker-lab",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
   },
   "author": "",
-  "license": "ISC",
   "devDependencies": {
     "nodemon": "^1.11.0"
   },
