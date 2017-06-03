@@ -18,6 +18,12 @@ const onPageLoaded = () => {
   fetchJson('/api/user-list').then(function(json) {
     console.log('/api/user-list', json);
   });
+
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./service-worker.js').then(() => {
+      console.log('Service Worker Registered');
+    });
+  }
 };
 
 window.addEventListener('load', onPageLoaded);
